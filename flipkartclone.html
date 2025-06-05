@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>flipkart clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+  
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+  
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+    </style>
+
+    
+    <body style="background-color: whitesmoke;">
+      <!---------------*navbar section*------>
+  <div class="container-fluid bg-light mt-1">
+    <div class="row mx-5 p-2">
+      <div class="col-md-2 border border-0"><img src="images/00.jpeg">
+      </div>
+ 
+ <div class="col-md-5 p-2 border-0 bg-success-subtle" style="font-family: Arial;">
+  <i class="  mx-2 fa-solid fa-magnifying-glass"></i>
+  Serach for Products,Brands and More
+ </div>
+ 
+ 
+ <div class="col-md-1 p-2 border border-0 d-inline-flex justify-content-center align-item-center" style="font-family: Arial;" >
+  <i class=" p-1 mx-2 fa-solid fa-circle-user"></i>
+  <li class="nav dropdown" >
+    Login
+    </li>
+    <a class="nev-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" ></a>
+  
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item border-bottom border-danger" href="#">new custemer?</a><a href="">sing up</a></li>
+    <li><a class="dropdown-item"href="#"></a><i class="fa-solid fa-circle-user"></i>my profile</li>
+    <li><a class="dropdown-item"href="#"></a><i class="fa-solid fa-box"></i> orders</li>
+    <li><a class="dropdown-item" href="#"></a><i class="fa-solid fa-heart"></i>wishlist</li>
+    <li><a class="dropdown-item"href="#"></a><i class="fa-solid fa-gift"></i>rewards</li>
+    <li><a class="dropdown-item"href="#"></a><i class="fa-solid fa-credit-card"></i>gift cards</li>
+  </ul>
+ </div>
+
+ <div class="col-md-1 p-2 border border-0" style="font-family: Arial;">
+  <i class="mx-2 fa-solid fa-cart-shopping"></i>
+  Cart
+ </div>
+ <div class="col-md-2  p-2 border border-0" style="font-family: Arial;">
+  <i class=" mx-2 fa-solid fa-shop"></i>
+  Become a Seller
+ </div>
+
+ <div class="col-md-1 p-2 border border-0 d-inline-flex justify-content-center align-item-center">
+  <li class="nav dropdown">
+    <a class="nev-link " href="#" role="button" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-ellipsis-vertical"></i></a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell mx-2"></i>Notification Preferences</a></li>
+      <li><a class="dropdown-item"href="#"><i class="fa-solid fa-headphones mx-2"></i> 24x7 Custemer Care</a></li>
+      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-chart-line mx-2"></i>Advertise</a></li>
+      <li><a class="dropdown-item"href="#"><i class="fa-solid fa-download mx-2"></i>Download App</a></li>
+    </ul>
+  </li>
+  <li class="nav">
+    <a class="nav-link" href="#"></i></a>
+  </li>
+ </div>
+ </div>
+    </div>
+  </div>
+  <!------------------*navbar section end*------->
+   
+  <!--------*img section*-------------->
+  <div class="container justify-content-center bg-light">
+    <div class="row d-flex d-md-flex flex-nowrap overflow-auto border border-0 mt-3">
+      <div class="col"><img src="images/r1.webp" style="height: 55px; width: 55px;"><p style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 4px;"><b>Kilos</b></p></div>
+      <div class="col"><img src="images/r2.webp" style="height: 55px; width: 55px;"><p style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 4px;"><b>Moblies</b></p></div>
+
+      <div class="col"><img src="images/fashion.jpg" style="height: 50px; width: 50px;">
+        <div class="dropdown">
+          <li class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 9px;">
+      <b> Fashion</b></li>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><h6>Top Wear</h6></a></li>
+          <li><a class="dropdown-item" href="#">man's bootom wear</a></li>
+          <li><a class="dropdown-item" href="#">woman footwear</a></li>
+          <li><a class="dropdown-item" href="#">man footwear</a></li>
+          <li><a class="dropdown-item" href="#">watches and accessories</a></li>
+          <li><a class="dropdown-item" href="#">woman Western</a></li>
+          <li><a class="dropdown-item" href="#">kids</a></li>
+          <li><a class="dropdown-item" href="#">winter</a></li>
+          <li><a class="dropdown-item" href="#">man's t-shirts</a></li>
+          <li><a class="dropdown-item" href="#">man's ethnic sets</a></li>
+          <li><a class="dropdown-item" href="#">man's casual shirts</a></li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="col"><img src="images/electronics.avif" style="height: 50px; width: 50px;">
+        <div class="dropdown">
+          <li class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 9px;">
+            <b>Electronics</b></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><h6>Audio</h6></a></li>
+          <li><a class="dropdown-item" href="#">electronics gst store</a></li>
+          <li><a class="dropdown-item" href="#">cameras & accessories</a></li>
+          <li><a class="dropdown-item" href="#">computer peripherals</a></li>
+          <li><a class="dropdown-item" href="#">gaming</a></li>
+          <li><a class="dropdown-item" href="#">health & personal care</a></li>
+          <li><a class="dropdown-item" href="#">laptop accessories</a></li>
+          <li><a class="dropdown-item" href="#">laptop and desktop </a></li>
+          <li><a class="dropdown-item" href="#">mobile's</a></li>
+          <li><a class="dropdown-item" href="#">powerbank</a></li>
+          <li><a class="dropdown-item" href="#">headphones</a></li>
+            </ul>
+          </div>
+          </div>
+
+      <div class="col"><img src="images/furniture's.webp" style="height: 50px; width: 50px;">
+        <div class="dropdown">
+          <li class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 9px;">
+           <b>Home & Furniture</b></li>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#"><h6>Home furnishings</h6></a></li>
+          <li><a class="dropdown-item" href="#">furniture</a></li>
+          <li><a class="dropdown-item" href="#">living room furniture</a></li>
+          <li><a class="dropdown-item" href="#">kichen &dining</a></li>
+          <li><a class="dropdown-item" href="#">bedroom furniture</a></li>
+          <li><a class="dropdown-item" href="#">space saving furniture</a></li>
+          <li><a class="dropdown-item" href="#">home decor</a></li>
+          <li><a class="dropdown-item" href="#">tools & utility </a></li>
+          <li><a class="dropdown-item" href="#">work space furniture</a></li>
+          <li><a class="dropdown-item" href="#">blankets</a></li>
+          </ul>
+        </div>
+        </div>
+
+      <div class="col">
+        <img src="images/r3.webp" style="height: 55px; width: 55px;"><p style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 4px;"><b>Appliances</b></p></div>
+      <div class="col"><img src="images/r4.webp" style="height: 55px; width: 55px;"><p style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 4px;"><b>Flight Bookings</b></p></div>
+
+      <div class="col"><img src="images/toys.jpg" style="height: 50px; width: 50px;">
+        <div class="dropdown">
+          <li class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 9px;" >
+             <b>Beauty,Toys & More</b></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><h6>Beauty & Personal Care</h6></a></li>
+          <li><a class="dropdown-item" href="#">man's grooming</a></li>
+          <li><a class="dropdown-item" href="#">food & drinks</a></li>
+          <li><a class="dropdown-item" href="#">health care</a></li>
+          <li><a class="dropdown-item" href="#">baby care</a></li>
+          <li><a class="dropdown-item" href="#">body &skin Care</a></li>
+          <li><a class="dropdown-item" href="#">eye make-up</a></li>
+          <li><a class="dropdown-item" href="#">face make-up</a></li>
+          <li><a class="dropdown-item" href="#">lip make-up</a></li>
+          <li><a class="dropdown-item" href="#">hair care</a></li>
+            </ul>
+          </div>
+          </div>
+
+      <div class="col"><img src="images/two.jpg" style="height: 50px; width: 50px;">
+        <div class="dropdown">
+          <li class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Arial, Helvetica, sans-serif; font-size: small; padding: 3px; margin-top: 9px;">
+            <b>Two Wheelers</b></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><h6>petrol vehicles</h6></a></li>
+              <li><a class="dropdown-item" href="#">electric vechicles</a></li>
+            </ul>
+          </div>
+          </div>
+    </div>
+  </div>
+   <!--------*img section end*-------------->
+  
+<!--------*slider section*-------------->
+<div class="container-fluid ">
+  <div class="row py-3">
+
+      <div class="col">
+          <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators" style="list-style: none;">
+                  <li data-bs-target="#mycarousel" data-bs-slide-to="0">
+                  </li>
+                  <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active">
+                  </li>
+                  <li data-bs-target="#mycarousel" data-bs-slide-to="2">
+                  </li>    
+              </ol>
+              <div class="carousel-inner">
+                  <div class="carousel-item" data-bs-interval="2000">
+
+                      <img src="images/kk.webp" class="d-block w-100" style="height: 300px;">
+                      <div class="carousel-caption">
+                          <h3>php training</h3>
+                          <p>best training center</p>
+                      </div></div>
+
+                      <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="2000">
+  
+                              <img src="images/fl1.webp" class="d-block w-100" style="height: 300px;">
+                              <div class="carousel-caption">
+                                  <h3>python training</h3>
+                                  <p>best training center</p>
+                              </div></div>
+
+                              <div class="carousel-inner">
+                                <div class="carousel-item" data-bs-interval="2000">
+              
+                                    <img src="images/t1.webp" class="d-block w-100" style="height: 300px;">
+                                    <div class="carousel-caption">
+                                    </div></div>
+
+                        
+
+                              <a href="#mycarousel" class="carousel-control-prev d-flex align-self-center "  data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+                                  <span class="carousel-control-prev-icon"></span>
+                              </a>
+
+                              <a href="#mycarousel" class="carousel-control-next d-flex align-self-center " data-bs-slide="next" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+                                  <span class="carousel-control-next-icon"></span>
+                              </a>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--------*slider section end*-------------->
+
+<!---------------carousel_01 start------------->
+<div class="container-fluid text-center my-3 border border-0 ">
+  <div class="row mx-1 my-auto justify-content-center bg-light">
+    <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Bast of Electronics</h5>
+    <div id="recipeCarousel" class="carousel slide carousel_01" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk1.webp" class="img-fluid "style="width: 150px; height: 150px;">
+               <p class="card-text" style="line-height: 0%; margin-top: 6px;">smartwatches</p>
+                <h6 class="card-title" style="line-height:0%;">from 1,099</h6>         
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk2.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Monitors</p>
+                <h6 class="card-title" style="line-height:0%;">from 7,949</h6> 
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk3.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Best of shavers</p>
+                <h6 class="card-title" style="line-height:0%;">from 1,649</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk5.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Monitors</p>
+                <h6 class="card-title" style="line-height:0%;">from 7,649</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk7.jpg" class="img-fluid " style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;"> Boot smartwatches</p>
+                <h6 class="card-title" style="line-height:0%;">from 1,649</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/fk8.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;"> Best truewireless......</p>
+                <h6 class="card-title" style="line-height:0%;">Grab Now</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a class="carousel-control-prev  d-flex  align-self-center  w-aut " href="#recipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next  d-flex align-self-center w-aut" href="#recipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color:#e1e1e1 ;">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>		
+</div>
+
+<!---------------carousel_01 end------------->
+<!---------------script carousel_01 start------------->
+
+<script>let items = document.querySelectorAll('.carousel_01 .carousel-item')
+
+  items.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+          if (!next) {
+      // wrap carousel by using first child
+      next = items[0]
+  }
+  let cloneChild = next.cloneNode(true)
+  el.appendChild(cloneChild.children[0])
+  next = next.nextElementSibling
+}
+})</script>
+    <!---------------script carousel_01 end------------->
+
+    <!---------------carousel_02 start------------->
+  <div class="container text-center my-3 border border-1">
+    <div class="row mx-auto my-auto justify-content-center bg-light">
+      <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Beauty,Toys & More</h5>
+      <div id="arecipeCarousel" class="carousel slide carousel_02" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                <img src="images/coffee.jpg" class="img-fluid "style="width: 150px; height: 150px;">
+               <p class="card-text" style="line-height: 0%; margin-top: 6px;">coffee powder</p>
+                <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>               
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                  <img src="images/pen.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                  <p class="card-text" style="line-height: 0%; margin-top: 6px;">top selling stationery</p>
+                <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>  
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                  <img src="images/car.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                  <p class="card-text" style="line-height: 0%; margin-top: 6px;">remote control car</p>
+                <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                  <img src="images/action toys.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                  <p class="card-text" style="line-height: 0%; margin-top: 6px;">action toys</p>
+                <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                  <img src="images/gym essentials.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                  <p class="card-text" style="line-height: 0%; margin-top: 6px;">gym essentials</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-3">
+              <div class="card border-0">
+                <div class="card-img">
+                  <img src="images/cycle.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                  <p class="card-text" style="line-height: 0%; margin-top: 6px;">cycles</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+                </div>
+                <div class="card-img-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev  d-flex  align-self-center w-aut" href="#arecipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next  d-flex  align-self-center w-aut" href="#arecipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>		
+  </div>
+  <!---------------carousel_02 end------------->
+<!---------------script carousel_02 start------------->
+
+<script>
+let items1= document.querySelectorAll('.carousel_02 .carousel-item')
+
+  items1.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+          if (!next) {
+      // wrap carousel by using first child
+      next = items1[0]
+  }
+  let cloneChild = next.cloneNode(true)
+  el.appendChild(cloneChild.children[0])
+  next = next.nextElementSibling
+}
+})</script>
+<!---------------script carousel_02 end------------->
+
+<!---------------carousel_03 start------------->
+<div class="container text-center my-3 border border-1">
+  <div class="row mx-auto my-auto justify-content-center bg-light">
+    <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Sports Healthcare & More</h5>
+    <div id="rrecipeCarousel" class="carousel slide carousel_03" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/cycle.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;"> Electric Cycles</p>
+                <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>             
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/dry-fruit.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Dry Fruits</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/food spreads.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Food Spreads </p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/medicen.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Medicen</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/yoga mat.webp" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Yoga Mat</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card border-0">
+              <div class="card-img">
+                <img src="images/treadmill.jpg" class="img-fluid" style="width: 150px; height: 150px;">
+                <p class="card-text" style="line-height: 0%; margin-top: 6px;">Treadmill</p>
+                  <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
+              </div>
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev d-flex  align-self-center w-aut"  href="#rrecipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next d-flex  align-self-center w-aut" href="#rrecipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>		
+</div>
+  
+<!---------------carousel_03 end------------->
+<!---------------script carousel_03 start------------->
+
+<script>
+let items3= document.querySelectorAll('.carousel_03 .carousel-item')
+
+items3.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+    // wrap carousel by using first child
+    next = items3[0]
+}
+let cloneChild = next.cloneNode(true)
+el.appendChild(cloneChild.children[0])
+next = next.nextElementSibling
+}
+})</script>
+<!---------------*script carousel_03 end*------------->
+<div class="container "><h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is 
+  revolutionizing the way we all shop in India. Why do you want to hop from one store to another
+   in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles.
+    Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, 
+    smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; 
+    from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, 
+    TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers,
+     mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. <br><br>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. <br><br><h2>Flipkart Plus</h2>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp; non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more! <br><br>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>An annual Zomato Gold membership<br>An annual Hotstar Premium membership<br>6 months Gaana plus subscription<br>Rupees 550 instant discount on flights on ixigo<br>Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.<br><br><h2>No Cost EMI</h2>In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.<br><br> <h2>EMI on Debit Cards</h2>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. <br><br><h2>Mobile Exchange Offers</h2>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply. <br><br><h2>What Can You Buy From Flipkart?</h2><h2>Mobile Phones</h2>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - <b>the Flipkart Complete Mobile Protection</b> covers a comprehensive range of post-purchase problems, with door-to-door services. <br><br><h2>Electronic Devices and Accessories</h2>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our <b>Back To College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.<br><br>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. <br><br>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>How about jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your phone; never again worry about running out of charge or memory on your next vacation.<br><br><h2>Large Appliances</h2>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our <b>Dependable TV and Appliance Store</b> ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others.<br><br>For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>. <br><br><h2>Small Home Appliances</h2>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.<br><br><h2>Lifestyle</h2>Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for anything and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.<br><br><h2>Home and Furniture</h2>Moving to a new place is never easy, especially if you're buying new furniture. Beds, sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of time? These are questions you must ask before you choose a store. Well, our <b>Durability Certified Furniture Store</b> has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through 35 stability and load tests so that you receive only the best-quality furniture. <b>Be FurniSure</b>, 
+  always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. <br><br>You may have your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting home under one roof at Flipkart. <br><br><h2>Baby and Kids</h2>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the business for your baby.<br><br><h2>Books, Sports and Games</h2>Work hard and no play? We don't believe in that. Get access to best-selling fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving. <br><br><h2>Grocery/Supermart</h2>Launching into the grocery vertical, Flipkart introduces <b>Supermart</b> that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our <b>1 Rupee Store</b> presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.</div>
+<!---------------*footer section*------------------->
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+    <!-- About -->
+    <div class="col-6 col-md-2 mb-4">
+      <h6 class="text-uppercase fw-bold">About</h6>
+      <ul class="list-unstyled small">
+      <li>Contact Us</li>
+      <li>About Us</li>
+      <li>Careers</li>
+      <li>Flipkart Stories</li>
+      <li>Press</li>
+      <li>Corporate Information</li>
+      </ul>
+    </div>
+  
+    <!-- Group Companies -->
+    <div class="col-6 col-md-2 mb-4">
+      <h6 class="text-uppercase fw-bold">Group Companies</h6>
+      <ul class="list-unstyled small">
+      <li>Myntra</li>
+      <li>Cleartrip</li>
+      <li>Shopsy</li>
+      </ul>
+    </div>
+  
+    <!-- Help -->
+    <div class="col-6 col-md-2 mb-4">
+      <h6 class="text-uppercase fw-bold">Help</h6>
+      <ul class="list-unstyled small">
+      <li>Payments</li>
+      <li>Shipping</li>
+      <li>Cancellation & Returns</li>
+      <li>FAQ</li>
+      </ul>
+    </div>
+  
+    <!-- Consumer Policy -->
+    <div class="col-6 col-md-2 mb-4">
+      <h6 class="text-uppercase fw-bold">Consumer Policy</h6>
+      <ul class="list-unstyled small">
+      <li>Cancellation & Returns</li>
+      <li>Terms Of Use</li>
+      <li>Security</li>
+      <li>Privacy</li>
+      <li>Sitemap</li>
+      <li>Grievance Redressal</li>
+      <li>EPR Compliance</li>
+      </ul>
+    </div>
+  
+    <!-- Address -->
+    <div class="col-md-4 mb-4">
+      <h6 class="text-uppercase fw-bold">Mail Us:</h6>
+      <p class="small mb-1">Flipkart Internet Private Limited,</p>
+      <p class="small mb-1">Buildings Alyssa, Begonia & Clove Embassy Tech Village,</p>
+      <p class="small mb-1">Outer Ring Road, Devarabeesanahalli Village,</p>
+      <p class="small mb-1">Bengaluru, 560103, Karnataka, India</p>
+
+      <h6 class="text-uppercase fw-bold">social:</h6>
+      <div> <a href="https://www.google.com/"><i class="fa-brands fa-facebook fa-xl" style="margin-right: 5px;"></i></a>
+            <a href="https://www.google.com/"><i class="fa-brands fa-x-twitter fa-xl" style="margin-right: 5px;"></i></a>
+             <a href="https://www.google.com/"><i class="fa-brands fa-youtube fa-xl" style="margin-right: 5px;"></i></a> 
+             <a href="https://www.google.com/"><i class="fa-brands fa-instagram fa-xl" style="margin-right: 5px;"></i></a></i></div>
+    </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bottom Info -->
+    <footer class="bg-dark text-white pt-2 border border-top-1 border border-white border-opacity-25">
+    <div class="container">
+      <div class="row">
+      <!-- About -->
+      <div class="col-6 col-md-2 mb-4">
+        <p><i class="fa-solid fa-shop fa" style="margin-right: 5px; color: #FFD43B;"></i>Become a Seller</p>
+      </div>
+    
+      <!-- Group Companies -->
+      <div class="col-6 col-md-2 mb-4">
+        <p><i class="fa-solid fa-star" style="margin-right: 5px; color: #FFD43B;"></i>advaritse</p>
+      </div>
+    
+      <!-- Help -->
+      <div class="col-6 col-md-2 mb-4">
+        <p><i class="fa-solid fa-gift" style="margin-right: 5px; color: #FFD43B;"></i>gift card</p>
+      </div>
+    
+      <!-- Consumer Policy -->
+      <div class="col-6 col-md-2 mb-4">
+        <p><i class="fa-solid fa-question" style="margin-right: 5px; color: #FFD43B;"></i>help center</p>
+      </div>
+    
+      <!-- Address -->
+      <div class="col-md-4 mb-4">
+        <p>@2007-2025 flipkart.com</p>
+      </div>
+
+       
+      </div>
+    </div>
+  </footer>
+    
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
