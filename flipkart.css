@@ -1,0 +1,66 @@
+
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  /* medium and up screens */
+  @media (min-width: 768px) {
+  
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+  
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+
+  .product-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transform: translateY(-3px);
+    }
+    .product-card img {
+      height: 150px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+    .product-title {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    .product-offer {
+      font-size: 13px;
+      font-weight: bold;
+      color: green;
+    }
+    .section-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }

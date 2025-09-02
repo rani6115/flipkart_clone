@@ -6,44 +6,7 @@
     <title>flipkart clone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-    
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-      display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-      display: block;
-    }
-  }
-  
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    display: flex;
-  }
-  
-  /* medium and up screens */
-  @media (min-width: 768px) {
-  
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
-    }
-  
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-  }
-  
-  .carousel-inner .carousel-item-end,
-  .carousel-inner .carousel-item-start { 
-    transform: translateX(0);
-  }
-    </style>
-
-    
+    <link rel="stylesheet" href="flipkart.css">
     <body style="background-color: whitesmoke;">
       <!---------------*navbar section*------>
       <!---------------*logo*------>
@@ -54,10 +17,10 @@
  <!---------------*logo end*------>
 
  <!--------------*serach bar*-------->
- <div class="col-md-5 p-2 border-0 bg-success-subtle" style="font-family: Arial;">
-  <i class="  mx-2 fa-solid fa-magnifying-glass"></i>
-  Serach for Products,Brands and More
- </div>
+<form class="d-flex mx-auto" style="width: 40%;">
+      <input class="form-control me-2" type="search" placeholder="Search for Products, Brands and More" aria-label="Search">
+      <button class="btn btn-outline-primary" type="submit">Search</button>
+    </form>
   <!--------------*serach bar end*-------->
  
    <!---------------*login*----->                 
@@ -243,7 +206,7 @@
                           <p>best training center</p>
                       </div></div>
 
-                      <div class="carousel-inner">
+                    
                           <div class="carousel-item active" data-bs-interval="2000">
   
                               <img src="images/fl1.webp" class="d-block w-100" style="height: 300px;">
@@ -252,7 +215,7 @@
                                   <p>best training center</p>
                               </div></div>
 
-                              <div class="carousel-inner">
+                              
                                 <div class="carousel-item" data-bs-interval="2000">
               
                                     <img src="images/t1.webp" class="d-block w-100" style="height: 300px;">
@@ -387,15 +350,15 @@
     <!---------------script carousel_01 end------------->
 
     <!---------------carousel_02 start------------->
-  <div class="container text-center my-3 border border-1">
-    <div class="row mx-auto my-auto justify-content-center bg-light">
-      <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Beauty,Toys & More</h5>
-      <div id="arecipeCarousel" class="carousel slide carousel_02" data-bs-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="col-md-3">
-              <div class="card border-0">
-                <div class="card-img">
+<div class="container-fluid text-center my-3 border border-0 ">
+  <div class="row mx-1 my-auto justify-content-center bg-light">
+    <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Bast of Electronics</h5>
+    <div id="aecipeCarousel" class="carousel slide carousel_2" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card border-0">
+             <div class="card-img">
                 <img src="images/coffee.jpg" class="img-fluid "style="width: 150px; height: 150px;">
                <p class="card-text" style="line-height: 0%; margin-top: 6px;">coffee powder</p>
                 <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>               
@@ -461,50 +424,53 @@
                   <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>
                 </div>
                 <div class="card-img-overlay"></div>
-              </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev  d-flex  align-self-center w-aut" href="#arecipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next  d-flex  align-self-center w-aut" href="#arecipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
       </div>
-    </div>		
-  </div>
-  <!---------------carousel_02 end------------->
-<!---------------script carousel_02 start------------->
+      
+      <a class="carousel-control-prev  d-flex  align-self-center  w-aut " href="#aecipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next  d-flex align-self-center w-aut" href="#aecipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color:#e1e1e1 ;">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>		
+</div>
 
-<script>
-let items1= document.querySelectorAll('.carousel_02 .carousel-item')
+<!---------------carousel_2 end------------->
+<!---------------script carousel_2start------------->
 
-  items1.forEach((el) => {
+<script>let items2 = document.querySelectorAll('.carousel_2 .carousel-item')
+
+  items2.forEach((el) => {
       const minPerSlide = 4
       let next = el.nextElementSibling
       for (var i=1; i<minPerSlide; i++) {
           if (!next) {
       // wrap carousel by using first child
-      next = items1[0]
+      next = items[0]
   }
   let cloneChild = next.cloneNode(true)
   el.appendChild(cloneChild.children[0])
   next = next.nextElementSibling
 }
 })</script>
+
 <!---------------script carousel_02 end------------->
 
-<!---------------carousel_03 start------------->
-<div class="container text-center my-3 border border-1">
-  <div class="row mx-auto my-auto justify-content-center bg-light">
-    <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Sports Healthcare & More</h5>
-    <div id="rrecipeCarousel" class="carousel slide carousel_03" data-bs-ride="carousel">
+<!---------------carousel_0 start------------->
+<div class="container-fluid text-center my-3 border border-0 ">
+  <div class="row mx-1 my-auto justify-content-center bg-light">
+    <h5 class="card-text" style="text-align: left; font-family: Calibri (Body); font-size: 25px; margin-bottom: 6px; padding: 10px;">Bast of Electronics</h5>
+    <div id="becipeCarousel" class="carousel slide carousel_3" data-bs-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <div class="col-md-3">
             <div class="card border-0">
-              <div class="card-img">
+            
+               <div class="card-img">
                 <img src="images/cycle.webp" class="img-fluid" style="width: 150px; height: 150px;">
                 <p class="card-text" style="line-height: 0%; margin-top: 6px;"> Electric Cycles</p>
                 <h6 class="card-title" style="line-height:0%;">upto 80% off</h6>             
@@ -574,36 +540,38 @@ let items1= document.querySelectorAll('.carousel_02 .carousel-item')
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev d-flex  align-self-center w-aut"  href="#rrecipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      
+      <a class="carousel-control-prev  d-flex  align-self-center  w-aut " href="#becipeCarousel" role="button" data-bs-slide="prev" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
       </a>
-      <a class="carousel-control-next d-flex  align-self-center w-aut" href="#rrecipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color: #e1e1e1;">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <a class="carousel-control-next  d-flex align-self-center w-aut" href="# becipeCarousel" role="button" data-bs-slide="next" style="width: 3rem; height: 5rem; background-color:#e1e1e1 ;">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
       </a>
     </div>
   </div>		
 </div>
-  
-<!---------------carousel_03 end------------->
-<!---------------script carousel_03 start------------->
 
-<script>
-let items3= document.querySelectorAll('.carousel_03 .carousel-item')
+<!---------------carousel_3 end------------->
+<!---------------script carousel_3start------------->
 
-items3.forEach((el) => {
-    const minPerSlide = 4
-    let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
-        if (!next) {
-    // wrap carousel by using first child
-    next = items3[0]
-}
-let cloneChild = next.cloneNode(true)
-el.appendChild(cloneChild.children[0])
-next = next.nextElementSibling
+<script>let items3 = document.querySelectorAll('.carousel_3 .carousel-item')
+
+  items3.forEach((el) => {
+      const minPerSlide = 4
+      let next = el.nextElementSibling
+      for (var i=1; i<minPerSlide; i++) {
+          if (!next) {
+      // wrap carousel by using first child
+      next = items[0]
+  }
+  let cloneChild = next.cloneNode(true)
+  el.appendChild(cloneChild.children[0])
+  next = next.nextElementSibling
 }
 })</script>
-<!---------------*script carousel_03 end*------------->
+
+<!---------------script carousel_02 end------------->
+
 <div class="container "><h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is 
   revolutionizing the way we all shop in India. Why do you want to hop from one store to another
    in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles.
